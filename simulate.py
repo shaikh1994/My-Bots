@@ -1,4 +1,7 @@
 import pybullet as p
 
-if __name__ == "__main__":
-    pass
+# Connect to PyBullet GUI
+physicsClient = p.connect(p.GUI)
+
+# Disconnect from PyBullet
+p.disconnect()
